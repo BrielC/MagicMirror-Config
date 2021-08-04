@@ -186,14 +186,14 @@ var config = {
 		  }
 		},
 		{
-		    module: 'MMM-Lunartic',
-			  header: "MOON PHASES",
-		    position: 'top_left',       // Best in left, center, or right regions
-		    config: {
+		module: 'MMM-Lunartic',
+		header: "MOON PHASES",
+		position: 'top_left',       // Best in left, center, or right regions
+		config: {
 		            mode: "static",     // rotating or static
 		            image: "current",   // animation, current, DayNight or static
 		            distance: "km",     // miles or km
-			          sounds: "no",       // howling wolf, only on a full moon
+			    sounds: "no",       // howling wolf, only on a full moon
 		            maxWidth: "300px",
 		            animationSpeed: 0,
 		            rotateInterval: 15000,
@@ -210,10 +210,10 @@ var config = {
 			  }
 		},
 		{
-			module: 'MMM-iFrame',
+		module: 'MMM-iFrame',
 	//	header: "N1 North ~ MALIBONGWE & WILLIAM NICOL",
-			position: 'bottom_right',	    // This can be any of the regions.
-			config: {
+		position: 'bottom_right',	    // This can be any of the regions.
+		config: {
 				// See 'Configuration options' for more information.
 				//	url: ["https://www.i-traffic.co.za/map/Cctv/GP%20CCTV%20N1%20612--2", "https://www.i-traffic.co.za/map/Cctv/GP%20CCTV%20N1%20612--2"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
 					url: ["https://www.i-traffic.co.za/map/Cctv/GP%20CCTV%20N1%20610--2", "https://www.i-traffic.co.za/map/Cctv/GP%20CCTV%20N1%20611--2"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
@@ -224,29 +224,29 @@ var config = {
 				}
 		},
 		{
-		  module: 'MMM-NetworkScanner',
-			header: "WiFi Activity",
-		  position: 'top_left', 
-		  config: {
+		module: 'MMM-NetworkScanner',
+		header: "WiFi Activity",
+		position: 'top_left', 
+		config: {
 		            devices: [
-				  { ipAddress: "github.com", name: "Github", icon: "globe"},
-//		    { macAddress: "1a:1b:1c:1a:1b:1c", name: "Server", icon: "server"},
-//		    { macAddress: "2a:2b:2c:2a:2b:2c", name: "Desktop", icon: "desktop"},
-		      { ipAddress: "10.1.1.10", name: "Laptop", icon: "laptop"},
-		      { macAddress: "92:A4:03:81:3B:6B", name: "Samsung CB Note20", icon: "android"},
-		      { macAddress: "CC:4B:73:8F:D6:EA", name: "Switch X CB", icon: "android"},
-				  { macAddress: "f8:84:f2:a3:63:83", name: "Samsung Caroline", icon: "android"},
-				  { macAddress: "d4:38:9c:bc:53:d6", name: "Sony AC", icon: "user"},
-			    { macAddress: "c4:73:1e:40:0f:75", name: "Samsung TV CB", icon: "desktop"},
-		      { macAddress: "10:13:31:a1:96:fc", name: "Router CB", icon: "wifi"},
-		      { macAddress: "e0:d4:5e:5d:07:b3", name: "Desktop PC CB", icon: "windows"},
-		      { macAddress: "b8:27:eb:85:66:37", name: "Kodi RetroPi CB", icon: "raspberry"},
-		      { macAddress: "00:ce:40:01:ee:ae", name: "Media3D CB", icon: "youtube"},
-		      { macAddress: "00:7c:2d:f3:66:4a", name: "Caroline TV", icon: "youtube"},
-				  { macAddress: "b8:25:eb:02:b3:c6", name: "Smart Mirror CB", icon: "raspberry-pi"},
-		      { macAddress: "30:df:b7:32:de:4e", name: "Google Mini CB", icon: "google"},
-				  { macAddress: "40:3f:8c:c4:f1:0a", name: "Mariola Cam", icon: "video"},
-				  { macAddress: "B4:27:EB:E5:7F:B8", name: "3D Octoprint", icon: "cubes"},
+		{ ipAddress: "github.com", name: "Github", icon: "globe"},
+//		{ macAddress: "1a:1b:1c:1a:1b:1c", name: "Server", icon: "server"},
+//		{ macAddress: "2a:2b:2c:2a:2b:2c", name: "Desktop", icon: "desktop"},
+		{ ipAddress: "10.1.1.10", name: "Laptop", icon: "laptop"},
+		{ macAddress: "92:A4:03:81:3B:6B", name: "Samsung CB Note20", icon: "android"},
+		{ macAddress: "CC:4B:73:8F:D6:EA", name: "Switch X CB", icon: "android"},
+		{ macAddress: "f8:84:f2:a3:63:83", name: "Samsung Caroline", icon: "android"},
+		{ macAddress: "d4:38:9c:bc:53:d6", name: "Sony AC", icon: "user"},
+		{ macAddress: "c4:73:1e:40:0f:75", name: "Samsung TV CB", icon: "desktop"},
+		{ macAddress: "10:13:31:a1:96:fc", name: "Router CB", icon: "wifi"},
+		{ macAddress: "e0:d4:5e:5d:07:b3", name: "Desktop PC CB", icon: "windows"},
+		{ macAddress: "b8:27:eb:85:66:37", name: "Kodi RetroPi CB", icon: "raspberry"},
+		{ macAddress: "00:ce:40:01:ee:ae", name: "Media3D CB", icon: "youtube"},
+		{ macAddress: "00:7c:2d:f3:66:4a", name: "Caroline TV", icon: "youtube"},
+		{ macAddress: "b8:25:eb:02:b3:c6", name: "Smart Mirror CB", icon: "raspberry-pi"},
+		{ macAddress: "30:df:b7:32:de:4e", name: "Google Mini CB", icon: "google"},
+		{ macAddress: "40:3f:8c:c4:f1:0a", name: "Mariola Cam", icon: "video"},
+		{ macAddress: "B4:27:EB:E5:7F:B8", name: "3D Octoprint", icon: "cubes"},
 		                ],
 				network: "192.168.1.1/24",
 		            	showUnknown: true,
